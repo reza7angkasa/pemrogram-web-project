@@ -9,12 +9,13 @@
 
     <form action="word1.php" method="POST"> First name:
 
-        <input type="text" name="firstname"> <br> Last name:
+        <input type="text" name="firstname"> <br><br> Last name:
 
         <input type="text" name="lastname"> 
 
         <input type="hidden" name="form_submitted" value="1" />
-
+<br>
+<br>
         <input type="submit" value="Submit">
 
     </form>
