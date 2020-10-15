@@ -14,13 +14,13 @@
             <?php echo $_POST['firstname'] . ' ' . $_POST['lastname']; ?>
         </p>
 
-        <p>Go <a href="/word1.php">back</a> to the form</p>
+        <p>Go <a href="word4.php">back</a> to the form</p>
 
         <?php else: ?>
 
             <h2>Registration Form</h2>
 
-            <form action="word1.php" method="POST">
+            <form action="word4.php" method="POST">
 
                  First name:
                 <input type="text" name="firstname">
@@ -34,6 +34,6 @@
 
             </form>
 
-      <?php endif; ? > 
+      <?php endif; ?> 
 </body> 
 </html>
