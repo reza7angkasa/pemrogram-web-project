@@ -14,7 +14,7 @@ header('Location: profile.php');
 }
 
 ?>
-<form action="metodepost.php" method="post">
+<form action="mengingatdatadengansession.php" method="post">
 <input type="text" name="nama">
 <input type="password" name="password">
 <input type="submit" name="submit">
