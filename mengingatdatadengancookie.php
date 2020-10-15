@@ -12,7 +12,7 @@ header('Location: metodepost2.php');
 }
 
 ?>
-<form action="metodepost.php" method="post">
+<form action="mengingatdatadengancookie.php" method="post">
 <input type="text" name="nama">
 <input type="password" name="password">
 <input type="submit" name="submit">
