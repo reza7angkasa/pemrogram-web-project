@@ -17,13 +17,13 @@
 
             <?php endif; ?>
 
-                <p>Go <a href="/search_engine.php">back</a> to the form</p>
+                <p>Go <a href="word5.php">back</a> to the form</p>
 
                 <?php else: ?>
 
                    <h2>Simple Search Engine - Type in GET </h2>
 
-                   <form action="search_engine.php" method="GET">
+                   <form action="word5.php" method="GET">
 
                         Search Term:
                         <input type="text" name="search_term">
