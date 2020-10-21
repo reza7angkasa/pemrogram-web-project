@@ -19,7 +19,7 @@
                     <?php echo $_POST['firstname'] . ' ' . $_POST['lastname']; ?>
                 </p>
 
-                <p> Go <a href="/registration_form2.php">back</a> to the form</p>
+                <p> Go <a href="word6.php">back</a> to the form</p>
 
             <?php endif; ?>
 
@@ -27,7 +27,7 @@
 
                         <h2>Registration Form</h2>
 
-                        <form action="registration_form2.php" method="POST">
+                        <form action="word6.php" method="POST">
 
                             First name:
                             <input type="text" name="firstname">

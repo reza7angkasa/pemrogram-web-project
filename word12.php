@@ -1,10 +1,8 @@
 <?php
 
- session_destroy(); //destroy entire session 
+ session_destroy();
 
 ?>
 <?php
 
-unset($_SESSION['product']); //destroy product session item 
-
-?>
+unset($_SESSION['product']);
