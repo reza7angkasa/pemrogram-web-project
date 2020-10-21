@@ -38,7 +38,7 @@
                 <div class="modal-content">
                     <!-- ini header -->
                     <div class="modal-header">
-                        <h4 class="modal-title">Konfirmasi Pendaftaran</h4>
+                        <h4 class="modal-title">Konfirmasi Pengeditan</h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
 
