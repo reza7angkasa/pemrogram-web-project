@@ -34,8 +34,6 @@
 
     <input type="submit" class="btn btn-success btn-block" name="daftar" value="Daftar" />
     </input>
-    <br>
-    <a class="btn btn-danger btn-block" href="latihan.php"><i class="fas fa-times-circle"></i></a>
         </fieldset>
     </form>
 </diV>
