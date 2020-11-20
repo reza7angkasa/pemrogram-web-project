@@ -8,6 +8,7 @@
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
      <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+     <script type="text/javascript" src="delete.js"></script>
 </head>
 <body>
     <?php 
@@ -59,10 +60,7 @@
     $strSQL = "SELECT * FROM matakuliah";
     $runStrSQL = mysqli_query($conn,$strSQL);
     $jmlRowData = mysqli_num_rows($runStrSQL);
-    if ($jmlRowData < 0) {
-      echo "<tr><td colspan='4'>Data Tidak Terdapat Dalam Database</td></tr>";    
-    }
-    else {
+    $no=0;
       while($row = mysqli_fetch_assoc($runStrSQL)) {
     ?>
             <tr>
@@ -72,11 +70,10 @@
               <td><?php echo $row["sks"] ?></td>
               <td>
                 <a href="edit_mk2.php?id=<?php echo $row["id"] ?>" class="btn btn-info"> <i class="fa fa-edit"></i></a>
-                <a href="hapus_mk2.php?id=<?php echo $row["id"] ?>" class="btn btn-danger"> <i class="fa fa-trash"></i></a>
+                <a class='delete_student' data-student-id=<?php echo $row["id"] ?> href='javascript:void(0)'> <i class="fa fa-trash"></i></a>
               </td>
             </tr>
     <?php 
-      }
     }
     ?>
           </tbody>
@@ -93,6 +90,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootbox.min.js"></script>
     <script>
     $(document).ready(function() {
         $('#listtable').DataTable();
