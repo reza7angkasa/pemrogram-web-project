@@ -3,7 +3,7 @@
 $db_host = "localhost";
 $db_user = "root";
 $db_pass = "";
-$db_name = "uas_weblanjut";
+$db_name = "rkh";
 
 try {    
     //create PDO connection 

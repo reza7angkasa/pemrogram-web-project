@@ -138,7 +138,11 @@ require_once("auth1.php");
                 echo "The Story Has Been Altered Successfully";
             } else if ($_GET['status'] == 'gagal') {
                 echo "Sorry There Is An Error The Story Can't Be Altered";
-              } else if ($_GET['status'] == 'success') {
+              } else if ($_GET['status'] == 'success1') {
+                echo "The Quote Has Been Posted Successfully";
+            } else if ($_GET['status'] == 'failed1') {
+              echo "Sorry There Is An Error The Quote Can't Be Posted";
+            } else if ($_GET['status'] == 'success') {
                 echo "The Story Has Been Deleted Successfully";
             } else if ($_GET['status'] == 'failed') {
               echo "Sorry There Is An Error The Story Can't Be Deleted";
@@ -153,6 +157,8 @@ require_once("auth1.php");
     <?php endif; ?>     
       <div class="row">
         <div class="col-md-12">
+        <a href="admin8.php" class="btn btn-primary">Create</a>
+        <br><br>
         <table id="listtable" class="table table-striped">
         <thead>
       <tr>
