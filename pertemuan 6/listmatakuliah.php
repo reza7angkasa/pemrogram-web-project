@@ -70,7 +70,7 @@
               <td><?php echo $row["sks"] ?></td>
               <td>
                 <a href="edit_mk2.php?id=<?php echo $row["id"] ?>" class="btn btn-info"> <i class="fa fa-edit"></i></a>
-                <a class='delete_student' data-student-id=<?php echo $row["id"] ?> href='javascript:void(0)'> <i class="fa fa-trash"></i></a>
+                 <a href="hapus_mk2.php?id=<?php echo $row["id"] ?>" class="btn btn-danger"> <i class="fa fa-trash"></i></a>
               </td>
             </tr>
     <?php 
